@@ -1,0 +1,13 @@
+/*    valorant */
+body{
+    background-color: black;
+    color:grey;
+}
+h1{
+    color:white;
+    text-transform : uppercase;
+}
+.result-js{
+    font-weight:bold;
+    font-size:22px;
+}
