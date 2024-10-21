@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat&display=swap');
+
+
+:root {
+    font-size: 62.5%;
+    --rock-color: #FF5733; /* Red for Rock */
+    --paper-color: #3498DB; /* Blue for Paper */
+    --scissors-color: #FFC300; /* Yellow for Scissors */
+    --bg-color: #F2F2F2; /* Neutral Background */
+    --text-color: #2C3E50; /* Dark Gray Text */
+}
+
+body{
+    font-size: 1.8rem;
+    background-color: var(--bg-color);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    position: relative;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 6rem;
+    font-family: 'Luckiest Guy', sans-serif;
+    color: var(--rock-color);
+}
+
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+}
+.hidden{
+    display: none!important;
+}
+.btn-1 {
+    padding: .2rem 2rem;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: var(--rock-color);
+    color: white;
+}
+
+.intro{
+    height:calc(100vh - 5px);
+    padding: 1rem 2rem ;
+}
+.intro p{
+    font-size: 2rem;
+}
+.intro button{
+    width: max-content;
+    background-color: var(--rock-color);
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.game,
+.page2,
+.final-score-page{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height:100%;
+    padding: 0 5rem; 
+    background-color: var(--bg-color);
+}
+.page2 div{
+    width: 60%;
+    padding: .5rem 0;
+    gap: 1rem;
+}
+
+.scores,
+.game-box{
+   
+    width: 60%;
+}
+
+.game-box{
+   
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+   
+}
+.game-box .current-round{
+    padding: 1rem 0;
+    text-align: center;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    margin: 0;
+}
+.game-box .play-area{
+    padding: 2rem 0;
+    height: 100%;
+    background-color: var(--paper-color); /* Blue for the game area */
+}
+
+.game-box .weapons button {
+    background-color: var(--scissors-color);
+    color: #FFFFFF;
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.results {
+    font-size: 2.2rem;
+    color: var(--rock-color);
+}
+
+
+
+.final-score-page h2 {
+    font-size: 4rem;
+    color: var(--scissors-color);
+}
+
+.final-score-page .final-result{
+    text-align: center;
+}
+
+.final-score-page button {
+    background-color: var(--paper-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 2rem;
+}
+
+@media (max-width: 480px){
+    .game,
+    .page2,
+    .final-score-page{
+        padding: 0 2rem;
+    }   
+    .page2 div{
+        width: 100%;
+        gap:3rem;
+        overflow: hidden;
+    }
+
+    .game-box,
+    .scores{
+        width: 100%;
+    }
+}
