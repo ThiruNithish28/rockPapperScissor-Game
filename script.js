@@ -209,7 +209,7 @@ initializeGame();
 if("serviceWorker" in navigator){
     window.addEventListener("load", function(){
         this.navigator.serviceWorker
-         .register("/serviceWorker.js")
+         .register("/rockPapperScissor-Game/serviceWorker.js") // when deployment there be error why becase the file is at repo but the root is my github id(so i mention that " /repo-name/serviceWorker.js")
          .then(res=> console.log("service Worker register"))
          .catch(err => console.log("service worker not registerd",err))
     })
