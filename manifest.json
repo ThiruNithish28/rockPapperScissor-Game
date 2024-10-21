@@ -8,19 +8,19 @@
     "orientation" :"portrait-primary",
     "icons" :[ 
         {
-            "src" : "/assest/images/icon.png",
+            "src" : "/rockPapperScissor-Game/assest/images/icon.png",
             "type":"image/png", "sizes": "512x512"
         }
     ],
     "screenshots": [
     {
-      "src": "/assest/images/Screenshot-main.png",
+      "src": "/rockPapperScissor-Game/assest/images/Screenshot-main.png",
       "type": "image/png",
       "sizes": "1360x768",
       "form_factor": "narrow"
     },
     {
-      "src": "/assest/images/Screenshot-gameplay.png",
+      "src": "/rockPapperScissor-Game/assest/images/Screenshot-gameplay.png",
       "type": "image/png",
       "sizes": "1360x768",
       "form_factor": "wide"
