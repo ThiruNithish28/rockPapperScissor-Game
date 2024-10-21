@@ -203,3 +203,14 @@ function updateScoreCard() {
 
 // Initialize the game setup when the script runs
 initializeGame();
+
+
+//Step 5 of service work for PWA
+if("serviceWorker" in navigator){
+    window.addEventListener("load", function(){
+        this.navigator.serviceWorker
+         .register("/serviceWorker.js")
+         .then(res=> console.log("service Worker register"))
+         .catch(err => console.log("service worker not registerd",err))
+    })
+}

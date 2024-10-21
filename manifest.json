@@ -1,0 +1,35 @@
+{
+    "name" : "Rock-Paper-sisscors",
+    "short_name" : "Fun Game",
+    "start_url" :"index.html",
+    "display":"standalone",
+    "background_color": "#fdfdfd",
+    "theme_color": "#db4938",
+    "orientation" :"portrait-primary",
+    "icons" :[ 
+        {
+            "src" : "/assest/images/icon.png",
+            "type":"image/png", "sizes": "512x512"
+        }
+    ],
+    "screenshots": [
+    {
+      "src": "/assest/images/Screenshot-main.png",
+      "type": "image/png",
+      "sizes": "1360x768",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/assest/images/Screenshot-gameplay.png",
+      "type": "image/png",
+      "sizes": "1360x768",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/assest/images/Screenshot-result.png",
+      "type": "image/png",
+      "sizes": "1360x768",
+      "form_factor": "narrow"
+    }
+  ]
+}
