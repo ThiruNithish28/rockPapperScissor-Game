@@ -174,14 +174,19 @@ function displayResult() {
     moveDisplay.append(img);
     resultDisplay.innerHTML = result;
 
-    setTimeout(() => {
+    const nextBtn = document.createElement('button');
+    nextBtn.innerHTML="next";
+    nextBtn.classList.add("btn-1");
+    resultDisplay.append(nextBtn);
+    nextBtn.addEventListener('click',()=>{
         resultDisplay.innerHTML = '';
         moveDisplay.querySelector('.computer').innerHTML='';
         moveDisplay.querySelector('.player').innerHTML='';
         removeScoreElement('fun-img'); // remove the fun img
         weapons.classList.remove('hidden');
-        
-    }, 2100);
+    })
+
+    
 }
 
 function updateScoreCard() {
